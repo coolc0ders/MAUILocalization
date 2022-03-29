@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUILocalization.MainPage"
-             BackgroundColor="{DynamicResource SecondaryColor}">
+             BackgroundColor="{DynamicResource SecondaryColor}"
+             xmlns:textResources="clr-namespace:MAUILocalization.Resources.Texts">
 
     <Grid>
-        <Label Text=""
+        <Label Text="{x:Static textResources:TextResources.HelloWorld}"
                HorizontalOptions="Center"
                VerticalOptions="Center"
                FontSize="Large"/>
